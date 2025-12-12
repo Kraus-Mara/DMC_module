@@ -12,6 +12,8 @@
 
 ## - Secure endpoints with appropriate permission checks (System Manager vs Store Keeper roles)
 
+## ---------------------------
+
 ## 1) Doctype: DMC
 
 dmc/doctype/dmc/dmc.json
