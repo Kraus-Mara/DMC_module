@@ -1,0 +1,13 @@
+
+{
+  "doctype": "DocType",
+  "name": "DMC Return",
+  "module": "DMC",
+  "is_submittable": true,
+  "fields": [
+    {"fieldname":"dmc","label":"DMC","fieldtype":"Link","options":"DMC","reqd":1},
+    {"fieldname":"project","label":"Project","fieldtype":"Link","options":"Project"},
+    {"fieldname":"items","label":"Items","fieldtype":"Table","options":"DMC Return Item"},
+    {"fieldname":"status","label":"Status","fieldtype":"Select","options":"Draft\nCounting\nValidated","default":"Draft"}
+  ]
+}

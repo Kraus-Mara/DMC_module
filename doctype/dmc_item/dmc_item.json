@@ -1,0 +1,15 @@
+
+{
+  "doctype": "DocType",
+  "name": "DMC Item",
+  "module": "DMC",
+  "istable": true,
+  "fields": [
+    {"fieldname":"item_code","label":"Item Code","fieldtype":"Link","options":"Item","reqd":1},
+    {"fieldname":"uom","label":"UoM","fieldtype":"Link","options":"UOM"},
+    {"fieldname":"qty_requested","label":"Qty Requested","fieldtype":"Float","reqd":1},
+    {"fieldname":"qty_reserved","label":"Qty Reserved","fieldtype":"Float"},
+    {"fieldname":"qty_shipped","label":"Qty Shipped","fieldtype":"Float"},
+    {"fieldname":"qty_counted","label":"Qty Counted (Return)","fieldtype":"Float"}
+  ]
+}

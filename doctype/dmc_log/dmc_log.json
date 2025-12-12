@@ -1,0 +1,13 @@
+{
+  "doctype": "DocType",
+  "name": "DMC Log",
+  "module": "DMC",
+  "custom": true,
+  "fields": [
+    {"fieldname":"dmc","label":"DMC","fieldtype":"Link","options":"DMC"},
+    {"fieldname":"timestamp","label":"Timestamp","fieldtype":"Datetime","default":"Now"},
+    {"fieldname":"type","label":"Type","fieldtype":"Select","options":"Discrepancy\nTransfer\nManual Adjustment"},
+    {"fieldname":"details","label":"Details","fieldtype":"Text"}
+  ]
+}
+

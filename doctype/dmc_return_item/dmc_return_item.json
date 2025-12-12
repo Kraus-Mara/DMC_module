@@ -1,0 +1,13 @@
+
+{
+  "doctype": "DocType",
+  "name": "DMC Return Item",
+  "module": "DMC",
+  "istable": true,
+  "fields": [
+    {"fieldname":"item_code","label":"Item Code","fieldtype":"Link","options":"Item","reqd":1},
+    {"fieldname":"qty_counted","label":"Qty Counted","fieldtype":"Float","reqd":1},
+    {"fieldname":"note","label":"Note","fieldtype":"Small Text"}
+  ]
+}
+
