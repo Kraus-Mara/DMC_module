@@ -1,6 +1,6 @@
-# Doctypes (JSON snippets) — to create via Developer > Doctype or via fixtures
+# TO DO LIST
 
-# 1) Doctype: DMC
+##1) Doctype: DMC
 
 dmc/doctype/dmc/dmc.json
 
@@ -22,7 +22,7 @@ dmc/doctype/dmc/dmc.json
 "permissions": [{"role":"System Manager","read":1,"write":1,"create":1,"submit":1}]
 }
 
-# 2) Doctype: DMC Item (child table)
+##2) Doctype: DMC Item (child table)
 
 dmc/doctype/dmc_item/dmc_item.json
 
@@ -41,9 +41,9 @@ dmc/doctype/dmc_item/dmc_item.json
 ]
 }
 
-# 3) Doctype: DMC Return
+##3) Doctype: DMC Return
 
-# Used to collect blind counts on return
+##Used to collect blind counts on return
 
 dmc/doctype/dmc_return/dmc_return.json
 
@@ -60,7 +60,7 @@ dmc/doctype/dmc_return/dmc_return.json
 ]
 }
 
-# 4) Doctype: DMC Return Item (child of DMC Return)
+##4) Doctype: DMC Return Item (child of DMC Return)
 
 dmc/doctype/dmc_return_item/dmc_return_item.json
 
@@ -76,7 +76,7 @@ dmc/doctype/dmc_return_item/dmc_return_item.json
 ]
 }
 
-# 5) Doctype: DMC Log (for discrepancies and transfers)
+##5) Doctype: DMC Log (for discrepancies and transfers)
 
 dmc/doctype/dmc_log/dmc_log.json
 
@@ -93,11 +93,11 @@ dmc/doctype/dmc_log/dmc_log.json
 ]
 }
 
-# ---------------------------
+##---------------------------
 
-# Python server-side: dmc/doctype/dmc/dmc.py
+##Python server-side: dmc/doctype/dmc/dmc.py
 
-# ---------------------------
+##---------------------------
 
 from **future** import annotations
 import frappe
@@ -105,7 +105,7 @@ from frappe.model.document import Document
 from frappe.utils import nowdate
 
 class DMC(Document):
-def validate(self): # Basic sanity checks
+def validate(self): ##Basic sanity checks
 if not self.project:
 frappe.throw("Project is required")
 for row in self.items:
@@ -113,21 +113,21 @@ if row.qty_requested <= 0:
 frappe.throw(f"Requested qty must be > 0 for {row.item_code}")
 
     def on_submit(self):
-        # Submitting a DMC triggers reservation creation
+        ##Submitting a DMC triggers reservation creation
         self.create_reservations()
         self.status = "Reserved"
         self.save()
 
     def create_reservations(self):
-        # Prefer using Stock Reservation Entry if available
-        # Fallback: create a Stock Entry of type 'Material Reservation' or adjust Bin.reserved_qty
+        ##Prefer using Stock Reservation Entry if available
+        ##Fallback: create a Stock Entry of type 'Material Reservation' or adjust Bin.reserved_qty
         for row in self.items:
             self._reserve_bin(row.item_code, row.qty_requested)
             row.qty_reserved = row.qty_requested
         frappe.msgprint(f"Reservations created for DMC {self.name}")
 
     def _reserve_bin(self, item_code, qty):
-        # Use Stock Reservation Entry when available
+        ##Use Stock Reservation Entry when available
         try:
             reservation = frappe.get_doc({
                 "doctype": "Stock Reservation",
@@ -139,7 +139,7 @@ frappe.throw(f"Requested qty must be > 0 for {row.item_code}")
             })
             reservation.insert(ignore_permissions=True)
         except Exception:
-            # Fallback: increment Bin.reserved_qty (risky — DB-level change)
+            ##Fallback: increment Bin.reserved_qty (risky — DB-level change)
             bin_doc = frappe.get_doc("Bin", {"item_code": item_code, "warehouse": self.warehouse})
             bin_doc.reserved_qty = (bin_doc.reserved_qty or 0) + qty
             bin_doc.save()
@@ -165,7 +165,7 @@ frappe.throw(f"Requested qty must be > 0 for {row.item_code}")
                 "t_warehouse": se.to_warehouse
             })
             row.qty_shipped = qty
-            # release reservation: try to delete Stock Reservation or decrement Bin.reserved_qty
+            ##release reservation: try to delete Stock Reservation or decrement Bin.reserved_qty
             self._release_reservation(row.item_code, qty)
 
         se.insert()
@@ -175,7 +175,7 @@ frappe.throw(f"Requested qty must be > 0 for {row.item_code}")
         frappe.msgprint(f"Shipment created: {se.name}")
 
     def _release_reservation(self, item_code, qty):
-        # remove Stock Reservation records linked to this DMC
+        ##remove Stock Reservation records linked to this DMC
         try:
             res = frappe.get_all("Stock Reservation", filters={"reference_doctype": "DMC", "reference_name": self.name, "item_code": item_code})
             for r in res:
@@ -199,7 +199,7 @@ frappe.throw(f"Requested qty must be > 0 for {row.item_code}")
             "status": "Counting",
             "items": []
         })
-        # populate items with item_code only, do not include quantities
+        ##populate items with item_code only, do not include quantities
         for row in self.items:
             dmc_return.append("items", {"item_code": row.item_code})
         dmc_return.insert()
@@ -222,15 +222,15 @@ frappe.throw(f"Requested qty must be > 0 for {row.item_code}")
             se.append("items", {"item_code": it['item_code'], "qty": it['qty'], "s_warehouse": from_wh, "t_warehouse": to_wh})
         se.insert()
         se.submit()
-        # log the transfer
+        ##log the transfer
         frappe.get_doc({"doctype":"DMC Log","dmc":self.name,"type":"Transfer","details":f"Transferred to project {target_project}: {items}"}).insert()
         return se.name
 
-# ---------------------------
+##---------------------------
 
-# Python server-side: dmc/doctype/dmc_return/dmc_return.py
+##Python server-side: dmc/doctype/dmc_return/dmc_return.py
 
-# ---------------------------
+##---------------------------
 
 from frappe.model.document import Document
 
@@ -240,7 +240,7 @@ if not self.dmc:
 frappe.throw("DMC reference required")
 
     def on_submit(self):
-        # when return validated, move items from project-return-warehouse to central and create adjustments
+        ##when return validated, move items from project-return-warehouse to central and create adjustments
         dmc = frappe.get_doc("DMC", self.dmc)
         project_return_wh = f"{dmc.project} - Return"
         central_wh = frappe.get_single("Stock Settings").default_warehouse
@@ -249,11 +249,11 @@ frappe.throw("DMC reference required")
         for row in self.items:
             counted = row.qty_counted or 0
             se.append("items", {"item_code": row.item_code, "qty": counted, "s_warehouse": project_return_wh, "t_warehouse": central_wh})
-            # reconcile with what was expected: compute discrepancy
+            ##reconcile with what was expected: compute discrepancy
             expected = self._expected_qty_from_dmc(row.item_code)
             if expected is not None and counted != expected:
                 frappe.get_doc({"doctype":"DMC Log","dmc": self.dmc, "type": "Discrepancy", "details": f"Item {row.item_code}: expected {expected}, counted {counted}"}).insert()
-                # create Stock Reconciliation / Adjustment if needed (left to implement per policy)
+                ##create Stock Reconciliation / Adjustment if needed (left to implement per policy)
         se.insert()
         se.submit()
 
@@ -266,11 +266,11 @@ frappe.throw("DMC reference required")
         except Exception:
             return None
 
-# ---------------------------
+##---------------------------
 
-# Client-side JS: dmc/doctype/dmc_return/dmc_return.js
+##Client-side JS: dmc/doctype/dmc_return/dmc_return.js
 
-# Hide any field showing expected qty and only allow qty_counted to be edited
+##Hide any field showing expected qty and only allow qty_counted to be edited
 
 frappe.ui.form.on('DMC Return', {
 refresh: function(frm) {
@@ -308,16 +308,16 @@ callback: function(r){ if(!r.exc) frm.reload_doc(); }
 }
 });
 
-# ---------------------------
+##---------------------------
 
-# Notes / To-do (in-file):
+##Notes / To-do (in-file):
 
-# - Implement permissions on project-return warehouses to prevent consumption while in 'Return:Counting'.
+##- Implement permissions on project-return warehouses to prevent consumption while in 'Return:Counting'.
 
-# - Decide and implement the exact Stock Reservation mechanism supported by your ERPNext version (Stock Reservation vs Bin.reserved_qty).
+##- Decide and implement the exact Stock Reservation mechanism supported by your ERPNext version (Stock Reservation vs Bin.reserved_qty).
 
-# - Implement Stock Reconciliation generation for discrepancies with business rules (loss vs damage vs adjustment policies).
+##- Implement Stock Reconciliation generation for discrepancies with business rules (loss vs damage vs adjustment policies).
 
-# - Add unit tests for the flow: create DMC -> submit -> create_shipment -> start_return_count -> submit DMC Return
+##- Add unit tests for the flow: create DMC -> submit -> create_shipment -> start_return_count -> submit DMC Return
 
-# - Secure endpoints with appropriate permission checks (System Manager vs Store Keeper roles)
+##- Secure endpoints with appropriate permission checks (System Manager vs Store Keeper roles)
