@@ -2,7 +2,7 @@
 
 # 1) Doctype: DMC
 
-# File: dmc/doctype/dmc/dmc.json
+File: dmc/doctype/dmc/dmc.json
 
 {
 "doctype": "DocType",
@@ -24,7 +24,7 @@
 
 # 2) Doctype: DMC Item (child table)
 
-# File: dmc/doctype/dmc_item/dmc_item.json
+File: dmc/doctype/dmc_item/dmc_item.json
 
 {
 "doctype": "DocType",
@@ -45,7 +45,7 @@
 
 # Used to collect blind counts on return
 
-# File: dmc/doctype/dmc_return/dmc_return.json
+File: dmc/doctype/dmc_return/dmc_return.json
 
 {
 "doctype": "DocType",
@@ -62,7 +62,7 @@
 
 # 4) Doctype: DMC Return Item (child of DMC Return)
 
-# File: dmc/doctype/dmc_return_item/dmc_return_item.json
+File: dmc/doctype/dmc_return_item/dmc_return_item.json
 
 {
 "doctype": "DocType",
@@ -78,7 +78,7 @@
 
 # 5) Doctype: DMC Log (for discrepancies and transfers)
 
-# File: dmc/doctype/dmc_log/dmc_log.json
+File: dmc/doctype/dmc_log/dmc_log.json
 
 {
 "doctype": "DocType",
