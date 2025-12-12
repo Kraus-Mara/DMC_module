@@ -1,7 +1,5 @@
 # TO DO LIST
 
-## ---------------------------
-
 ## - Implement permissions on project-return warehouses to prevent consumption while in 'Return:Counting'.
 
 ## - Decide and implement the exact Stock Reservation mechanism supported by your ERPNext version (Stock Reservation vs Bin.reserved_qty).
@@ -11,8 +9,6 @@
 ## - Add unit tests for the flow: create DMC -> submit -> create_shipment -> start_return_count -> submit DMC Return
 
 ## - Secure endpoints with appropriate permission checks (System Manager vs Store Keeper roles)
-
-## ---------------------------
 
 ## 1) Doctype: DMC
 
@@ -34,15 +30,13 @@ dmc/doctype/dmc_return_item/dmc_return_item.json
 
 dmc/doctype/dmc_log/dmc_log.json
 
-## ---------------------------
+# --- Python ---
 
 ## Python server-side: dmc/doctype/dmc/dmc.py
 
-## ---------------------------
-
 ## Python server-side: dmc/doctype/dmc_return/dmc_return.py
 
-## ---------------------------
+# --- Javascript ---
 
 ## Client-side JS: dmc/doctype/dmc_return/dmc_return.js
 
