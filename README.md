@@ -1,5 +1,17 @@
 # TO DO LIST
 
+## ---------------------------
+
+## - Implement permissions on project-return warehouses to prevent consumption while in 'Return:Counting'.
+
+## - Decide and implement the exact Stock Reservation mechanism supported by your ERPNext version (Stock Reservation vs Bin.reserved_qty).
+
+## - Implement Stock Reconciliation generation for discrepancies with business rules (loss vs damage vs adjustment policies).
+
+## - Add unit tests for the flow: create DMC -> submit -> create_shipment -> start_return_count -> submit DMC Return
+
+## - Secure endpoints with appropriate permission checks (System Manager vs Store Keeper roles)
+
 ## 1) Doctype: DMC
 
 dmc/doctype/dmc/dmc.json
@@ -307,17 +319,3 @@ callback: function(r){ if(!r.exc) frm.reload_doc(); }
 }
 }
 });
-
-## ---------------------------
-
-## Notes / To-do (in-file):
-
-## - Implement permissions on project-return warehouses to prevent consumption while in 'Return:Counting'.
-
-## - Decide and implement the exact Stock Reservation mechanism supported by your ERPNext version (Stock Reservation vs Bin.reserved_qty).
-
-## - Implement Stock Reconciliation generation for discrepancies with business rules (loss vs damage vs adjustment policies).
-
-## - Add unit tests for the flow: create DMC -> submit -> create_shipment -> start_return_count -> submit DMC Return
-
-## - Secure endpoints with appropriate permission checks (System Manager vs Store Keeper roles)
