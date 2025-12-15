@@ -1,0 +1,101 @@
+<mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36" version="29.2.7">
+  <diagram name="Page-1" id="krlJ_D00Vfsp9Ew0yhwz">
+    <mxGraphModel dx="1248" dy="837" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="7l__8JR0W51WwzOts6h7-442" parent="1" style="swimlane;whiteSpace=wrap;html=1;strokeColor=#666666;align=center;verticalAlign=middle;fontFamily=Helvetica;fontSize=12;fontColor=#333333;fontStyle=0;horizontal=1;fillColor=#f5f5f5;sketch=1;curveFitting=1;jiggle=2;rounded=0;shadow=1;glass=0;startSize=23;strokeWidth=2;" value="&lt;font face=&quot;Comic Sans MS&quot;&gt;PAGE WEB&lt;/font&gt;" vertex="1">
+          <mxGeometry height="670" width="790" x="19" y="20" as="geometry" />
+        </mxCell>
+        <mxCell id="7l__8JR0W51WwzOts6h7-453" edge="1" parent="7l__8JR0W51WwzOts6h7-442" source="7l__8JR0W51WwzOts6h7-443" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontFamily=Helvetica;fontSize=12;fontColor=default;fontStyle=0;horizontal=1;sketch=1;curveFitting=1;jiggle=2;" value="">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="233.5" y="165" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="7l__8JR0W51WwzOts6h7-443" parent="7l__8JR0W51WwzOts6h7-442" style="rounded=1;whiteSpace=wrap;html=1;strokeColor=#666666;align=center;verticalAlign=middle;fontFamily=Helvetica;fontSize=12;fontColor=#333333;fontStyle=0;horizontal=1;fillColor=#f5f5f5;sketch=1;curveFitting=1;jiggle=2;" value="&lt;font face=&quot;Comic Sans MS&quot;&gt;Consulter&lt;/font&gt;" vertex="1">
+          <mxGeometry height="30" width="145" x="161" y="70" as="geometry" />
+        </mxCell>
+        <mxCell id="7l__8JR0W51WwzOts6h7-445" parent="7l__8JR0W51WwzOts6h7-442" style="rounded=0;whiteSpace=wrap;html=1;strokeColor=#666666;align=center;verticalAlign=middle;fontFamily=Helvetica;fontSize=12;fontColor=#333333;fontStyle=0;horizontal=1;fillColor=#f5f5f5;sketch=1;curveFitting=1;jiggle=2;strokeWidth=2;" value="" vertex="1">
+          <mxGeometry height="640" width="150" y="30" as="geometry" />
+        </mxCell>
+        <mxCell id="7l__8JR0W51WwzOts6h7-446" parent="7l__8JR0W51WwzOts6h7-442" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;fontFamily=Comic Sans MS;fontSize=12;fontColor=default;fontStyle=0;horizontal=1;sketch=1;curveFitting=1;jiggle=2;" value="Barre de navigation" vertex="1">
+          <mxGeometry height="30" width="119" x="21" y="40" as="geometry" />
+        </mxCell>
+        <mxCell id="7l__8JR0W51WwzOts6h7-459" edge="1" parent="7l__8JR0W51WwzOts6h7-442" source="7l__8JR0W51WwzOts6h7-447" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontFamily=Helvetica;fontSize=12;fontColor=default;fontStyle=0;horizontal=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;entryPerimeter=0;sketch=1;curveFitting=1;jiggle=2;" target="7l__8JR0W51WwzOts6h7-460" value="">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="707.5" y="165" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="7l__8JR0W51WwzOts6h7-447" parent="7l__8JR0W51WwzOts6h7-442" style="rounded=1;whiteSpace=wrap;html=1;strokeColor=#666666;align=center;verticalAlign=middle;fontFamily=Helvetica;fontSize=12;fontColor=#333333;fontStyle=0;horizontal=1;fillColor=#f5f5f5;sketch=1;curveFitting=1;jiggle=2;" value="&lt;font face=&quot;Comic Sans MS&quot;&gt;Créer une DMC&lt;/font&gt;" vertex="1">
+          <mxGeometry height="30" width="145" x="477" y="70" as="geometry" />
+        </mxCell>
+        <mxCell id="7l__8JR0W51WwzOts6h7-461" edge="1" parent="7l__8JR0W51WwzOts6h7-442" source="7l__8JR0W51WwzOts6h7-448" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;fontFamily=Helvetica;fontSize=12;fontColor=default;fontStyle=0;horizontal=1;sketch=1;curveFitting=1;jiggle=2;" target="7l__8JR0W51WwzOts6h7-454">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="7l__8JR0W51WwzOts6h7-448" parent="7l__8JR0W51WwzOts6h7-442" style="rounded=1;whiteSpace=wrap;html=1;strokeColor=#666666;align=center;verticalAlign=middle;fontFamily=Helvetica;fontSize=12;fontColor=#333333;fontStyle=0;horizontal=1;fillColor=#f5f5f5;sketch=1;curveFitting=1;jiggle=2;" value="&lt;font face=&quot;Comic Sans MS&quot;&gt;Modifier une DMC&lt;/font&gt;" vertex="1">
+          <mxGeometry height="30" width="145" x="320" y="70" as="geometry" />
+        </mxCell>
+        <mxCell id="7l__8JR0W51WwzOts6h7-451" parent="7l__8JR0W51WwzOts6h7-442" style="rounded=0;whiteSpace=wrap;html=1;strokeColor=#666666;align=center;verticalAlign=middle;fontFamily=Helvetica;fontSize=12;fontColor=#333333;fontStyle=0;horizontal=1;fillColor=#f5f5f5;sketch=1;curveFitting=1;jiggle=2;strokeWidth=2;" value="&lt;font face=&quot;Comic Sans MS&quot;&gt;&lt;b&gt;DMC&lt;/b&gt;&lt;/font&gt;" vertex="1">
+          <mxGeometry height="30" width="630" x="150" y="30" as="geometry" />
+        </mxCell>
+        <mxCell id="7l__8JR0W51WwzOts6h7-464" edge="1" parent="7l__8JR0W51WwzOts6h7-442" source="7l__8JR0W51WwzOts6h7-455" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontFamily=Helvetica;fontSize=12;fontColor=default;fontStyle=0;horizontal=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;sketch=1;curveFitting=1;jiggle=2;" target="7l__8JR0W51WwzOts6h7-463" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="7l__8JR0W51WwzOts6h7-454" parent="7l__8JR0W51WwzOts6h7-442" style="swimlane;fontStyle=1;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;strokeColor=#666666;align=center;verticalAlign=middle;fontFamily=Comic Sans MS;fontSize=12;fillColor=#f5f5f5;sketch=1;curveFitting=1;jiggle=2;fontColor=#333333;gradientColor=none;strokeWidth=2;" value="Liste des DMC" vertex="1">
+          <mxGeometry height="90" width="199" x="161" y="170" as="geometry" />
+        </mxCell>
+        <mxCell id="7l__8JR0W51WwzOts6h7-455" parent="7l__8JR0W51WwzOts6h7-454" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;fontFamily=Comic Sans MS;fontSize=12;fontColor=default;fontStyle=0;horizontal=1;" value="BARRE DE RECHERCHE" vertex="1">
+          <mxGeometry height="30" width="199" y="30" as="geometry" />
+        </mxCell>
+        <mxCell id="7l__8JR0W51WwzOts6h7-456" parent="7l__8JR0W51WwzOts6h7-454" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;fontFamily=Comic Sans MS;fontSize=12;fontColor=default;fontStyle=0;horizontal=1;" value="LISTE DE DMC" vertex="1">
+          <mxGeometry height="30" width="199" y="60" as="geometry" />
+        </mxCell>
+        <mxCell id="7l__8JR0W51WwzOts6h7-460" parent="7l__8JR0W51WwzOts6h7-442" style="shape=note;whiteSpace=wrap;html=1;backgroundOutline=1;darkOpacity=0.05;strokeColor=default;align=center;verticalAlign=middle;fontFamily=Helvetica;fontSize=12;fontColor=default;fontStyle=0;horizontal=1;fillColor=default;sketch=1;curveFitting=1;jiggle=2;" value="&lt;font face=&quot;Comic Sans MS&quot;&gt;Formulaire de création de DMC&lt;/font&gt;" vertex="1">
+          <mxGeometry height="200" width="129" x="485" y="220" as="geometry" />
+        </mxCell>
+        <mxCell id="7l__8JR0W51WwzOts6h7-463" parent="7l__8JR0W51WwzOts6h7-442" style="shape=note;whiteSpace=wrap;html=1;backgroundOutline=1;darkOpacity=0.05;strokeColor=default;align=center;verticalAlign=middle;fontFamily=Helvetica;fontSize=12;fontColor=default;fontStyle=0;horizontal=1;fillColor=default;sketch=1;curveFitting=1;jiggle=2;" value="&lt;div&gt;&lt;font face=&quot;Comic Sans MS&quot;&gt;&lt;br&gt;&lt;/font&gt;&lt;/div&gt;&lt;font face=&quot;Comic Sans MS&quot;&gt;Formulaire de modification de DMC&lt;/font&gt;" vertex="1">
+          <mxGeometry height="120" width="137" x="326.5" y="300" as="geometry" />
+        </mxCell>
+        <mxCell id="7l__8JR0W51WwzOts6h7-466" parent="7l__8JR0W51WwzOts6h7-442" style="rounded=1;whiteSpace=wrap;html=1;strokeColor=#666666;align=center;verticalAlign=middle;fontFamily=Helvetica;fontSize=12;fontColor=#333333;fontStyle=2;horizontal=1;fillColor=#f5f5f5;sketch=1;curveFitting=1;jiggle=2;" value="&lt;font face=&quot;Comic Sans MS&quot;&gt;ACCUEIL&lt;/font&gt;" vertex="1">
+          <mxGeometry height="30" width="145" x="2.5" y="80" as="geometry" />
+        </mxCell>
+        <mxCell id="7l__8JR0W51WwzOts6h7-467" parent="7l__8JR0W51WwzOts6h7-442" style="rounded=1;whiteSpace=wrap;html=1;align=center;verticalAlign=middle;fontFamily=Helvetica;fontSize=12;fontStyle=2;horizontal=1;sketch=1;curveFitting=1;jiggle=2;strokeWidth=1;fillColor=#f5f5f5;strokeColor=#666666;fontColor=#333333;" value="&lt;font face=&quot;Comic Sans MS&quot;&gt;ARTICLES&lt;/font&gt;" vertex="1">
+          <mxGeometry height="30" width="145" x="2.5" y="110" as="geometry" />
+        </mxCell>
+        <mxCell id="7l__8JR0W51WwzOts6h7-468" parent="7l__8JR0W51WwzOts6h7-442" style="rounded=1;whiteSpace=wrap;html=1;strokeColor=#36393d;align=center;verticalAlign=middle;fontFamily=Helvetica;fontSize=12;fontStyle=2;horizontal=1;fillColor=#eeeeee;sketch=1;curveFitting=1;jiggle=2;" value="&lt;font face=&quot;Comic Sans MS&quot;&gt;PROJETS&lt;/font&gt;" vertex="1">
+          <mxGeometry height="30" width="145" y="170" as="geometry" />
+        </mxCell>
+        <mxCell id="7l__8JR0W51WwzOts6h7-469" parent="7l__8JR0W51WwzOts6h7-442" style="rounded=0;whiteSpace=wrap;html=1;strokeColor=#666666;align=center;verticalAlign=middle;fontFamily=Helvetica;fontSize=12;fontStyle=2;horizontal=1;fillColor=#f5f5f5;sketch=1;curveFitting=1;jiggle=2;gradientColor=#b3b3b3;" value="&lt;font face=&quot;Comic Sans MS&quot;&gt;DMC&lt;/font&gt;" vertex="1">
+          <mxGeometry height="30" width="145" y="200" as="geometry" />
+        </mxCell>
+        <mxCell id="7l__8JR0W51WwzOts6h7-470" parent="7l__8JR0W51WwzOts6h7-442" style="rounded=1;whiteSpace=wrap;html=1;strokeColor=#666666;align=center;verticalAlign=middle;fontFamily=Helvetica;fontSize=12;fontColor=#333333;fontStyle=2;horizontal=1;fillColor=#f5f5f5;sketch=1;curveFitting=1;jiggle=2;" value="&lt;font face=&quot;Comic Sans MS&quot;&gt;KPI&lt;/font&gt;" vertex="1">
+          <mxGeometry height="30" width="145" y="230" as="geometry" />
+        </mxCell>
+        <mxCell id="7l__8JR0W51WwzOts6h7-471" parent="7l__8JR0W51WwzOts6h7-442" style="rounded=1;whiteSpace=wrap;html=1;strokeColor=#666666;align=center;verticalAlign=middle;fontFamily=Helvetica;fontSize=12;fontStyle=2;horizontal=1;fillColor=#f5f5f5;sketch=1;curveFitting=1;jiggle=2;fontColor=#333333;" value="&lt;font face=&quot;Comic Sans MS&quot;&gt;STOCK&lt;/font&gt;" vertex="1">
+          <mxGeometry height="30" width="145" y="140" as="geometry" />
+        </mxCell>
+        <mxCell id="7l__8JR0W51WwzOts6h7-484" edge="1" parent="7l__8JR0W51WwzOts6h7-442" source="7l__8JR0W51WwzOts6h7-477" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontFamily=Helvetica;fontSize=12;fontColor=default;fontStyle=0;horizontal=1;sketch=1;curveFitting=1;jiggle=2;" target="7l__8JR0W51WwzOts6h7-479" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="7l__8JR0W51WwzOts6h7-477" parent="7l__8JR0W51WwzOts6h7-442" style="rounded=1;whiteSpace=wrap;html=1;strokeColor=#666666;align=center;verticalAlign=middle;fontFamily=Helvetica;fontSize=12;fontColor=#333333;fontStyle=0;horizontal=1;fillColor=#f5f5f5;sketch=1;curveFitting=1;jiggle=2;" value="&lt;font face=&quot;Comic Sans MS&quot;&gt;Retourner une DMC&lt;/font&gt;" vertex="1">
+          <mxGeometry height="30" width="145" x="635" y="70" as="geometry" />
+        </mxCell>
+        <mxCell id="7l__8JR0W51WwzOts6h7-483" edge="1" parent="7l__8JR0W51WwzOts6h7-442" source="7l__8JR0W51WwzOts6h7-479" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontFamily=Helvetica;fontSize=12;fontColor=default;fontStyle=0;horizontal=1;sketch=1;curveFitting=1;jiggle=2;" target="7l__8JR0W51WwzOts6h7-480" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="7l__8JR0W51WwzOts6h7-479" parent="7l__8JR0W51WwzOts6h7-442" style="shape=note;whiteSpace=wrap;html=1;backgroundOutline=1;darkOpacity=0.05;strokeColor=default;align=center;verticalAlign=middle;fontFamily=Helvetica;fontSize=12;fontColor=default;fontStyle=0;horizontal=1;fillColor=default;sketch=1;curveFitting=1;jiggle=2;" value="&lt;font face=&quot;Comic Sans MS&quot;&gt;Formulaire de retour de DMC&lt;/font&gt;" vertex="1">
+          <mxGeometry height="110" width="129" x="643" y="140" as="geometry" />
+        </mxCell>
+        <mxCell id="7l__8JR0W51WwzOts6h7-491" edge="1" parent="7l__8JR0W51WwzOts6h7-442" source="7l__8JR0W51WwzOts6h7-480" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontFamily=Helvetica;fontSize=12;fontColor=default;fontStyle=0;horizontal=1;sketch=1;curveFitting=1;jiggle=2;" target="7l__8JR0W51WwzOts6h7-490" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="7l__8JR0W51WwzOts6h7-480" parent="7l__8JR0W51WwzOts6h7-442" style="whiteSpace=wrap;html=1;fontStyle=0;horizontal=1;sketch=1;curveFitting=1;jiggle=2;fontFamily=Comic Sans MS;" value="Inventaire de retour chantier" vertex="1">
+          <mxGeometry height="60" width="132" x="641.5" y="290" as="geometry" />
+        </mxCell>
+        <mxCell id="7l__8JR0W51WwzOts6h7-490" parent="7l__8JR0W51WwzOts6h7-442" style="whiteSpace=wrap;html=1;fontStyle=0;horizontal=1;sketch=1;curveFitting=1;jiggle=2;fontFamily=Comic Sans MS;" value="Validation du retour" vertex="1">
+          <mxGeometry height="40" width="132" x="640" y="380" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
